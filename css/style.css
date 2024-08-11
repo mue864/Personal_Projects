@@ -16,7 +16,8 @@ body {
 /*Desktop Nav*/
 header {
     background-color: hsl(0,0%,100%);  
-    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
     transition: all 0.3s ease-in;
 }
 
@@ -25,7 +26,7 @@ nav,
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 11vh;
+    height: 8vh;
     
 }
 
@@ -118,10 +119,13 @@ nav,
     color: black;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+
+   
 }
 
 .menulinks li {
     list-style: none;
+    position: relative;
 }
 
 .menulinks.open {
@@ -159,6 +163,7 @@ nav,
     display: flex;
     justify-content: center;
     gap: 10rem;
+    padding-top: 5rem;
 }
 
 .hero-image img{
@@ -182,39 +187,23 @@ nav,
 }
 
 /* Get Started btn*/
+.btn-container a{
+    text-decoration: none;
+    font-weight: 700;
+    font-family: inherit;
+    color: hsl(150, 40%, 30%);
+}
+
 .btn-container {
-    position: relative;
-    left: 5rem;
-    top: 3rem;
+    width: 120px;
+    height: 50px;
+    background-color: hsl(150, 71%, 57%);
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    margin: 1rem 0;
 }
 
-.btn {
-    padding: 20px;
-    border-radius: 25px;
-    border:none;
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    transition: all 0.4s ease-in-out;
-}
-
-.btn:hover {
-    border: hsl(150, 60%, 40%) 2px solid;
-    background-color: hsl(150, 60%, 40%);
-    color: hsl(0, 0%, 100%);
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.btn:active {
-    transform: scale(0.95);
-}
-
-.btn-color-1 {
-    background-color: hsl(151, 63%, 51%);
-    color: hsl(0,0,10%); 
-    transition: all 0.4s ease-in-out;
-}
 
 /*Pricing section*/
 .pricing {
@@ -223,8 +212,9 @@ nav,
     margin: 0 auto;
 }
 
-.pricing__container {
+.pricingItem__container {
     padding: 1rem 0 2rem;
+    
 }
 
 .pricing__hero {
@@ -237,7 +227,7 @@ nav,
     font-weight: 900;
     font-size: 2rem;
     margin: 0 0 1rem 0;
-    color: hsl(0, 6%, 7%);
+    color: hsl(0, 0%, 40%);
 }
 
 .pricing__hero__subtitle {
@@ -245,27 +235,126 @@ nav,
 }
 
 .pricingItem {
+    width: 500px;
     background-color: hsl(0,0%,100%);
     border: 1px solid #e6e6e6;
     border-radius: 1rem;
     box-shadow: none;
+    margin: 0 auto;
     padding: 2rem 1.5rem;
     display: inline-flex;
     flex-direction: column;
+    box-shadow: 0px 2px 7px hsl(0, 0%, 80%);
+    transition: all 0.3s ease-in-out;
+    color: hsl(0, 0%, 40%);
 }
-.priingItem__container {
+
+.pricingItem:hover {  
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 7px 10px hsl(0, 0%, 40%);
+}
+
+
+.pricingItem__container {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5em;
 }
 
+.card__description {
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 2rem 0;
+    color: hsl(0, 0%, 40%);
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price span {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.free {
+    color: hsl(105, 71%, 57%);
+}
+
+.gold {
+    color: hsl(55, 87%, 41%); 
+}
+
+.pro {
+    color: hsl(271, 75%, 45%);
+}
+
+button {
+    padding: 1rem 1.5rem;
+    margin: 20px auto;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+     
+}
+
+.btn-green {
+    background-color: hsl(105, 71%, 68%);
+    color: hsl(138, 92%, 29%);
+    font-weight: 700;
+}
+
+.btn-green:hover {
+    box-shadow: 0px 6px 10px hsl(150, 40%, 30%);
+}
+
+.btn-gold {
+    background-color: hsl(55, 90%, 80%); 
+    color: hsl(30, 80%, 40%);  
+}
+
+.btn-gold:hover {
+    box-shadow: 0px 6px 10px hsl(55, 60%, 30%);
+}
+
+.btn-purple {
+    background-color: hsl(270, 60%, 90%);
+    color: hsl(315, 80%, 40%)
+}
+
+.btn-purple:hover {
+    box-shadow: 0px 6px 10px hsl(315, 40%, 30%);
+}
+
+ul {
+    line-height: 2;
+    list-style-type: none;
+}
+
+del {
+    color: red;
+}
+
 /*Who are we section*/
+
 .aboutUs {
-    display: flex;
+    display: grid;
     transition: all 1s ease-in;
-    gap: 10rem;
-    margin: auto 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     justify-content: center;
     height: 100vh;
     font-size: 20px;
@@ -273,6 +362,8 @@ nav,
 
 
 .whoAreWe, .vision {
+    width: 500px;
+    margin: 0 auto;
     align-content: center;
 }
 

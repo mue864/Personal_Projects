@@ -1,8 +1,30 @@
 @media screen and (max-width: 1200px) {
+
      #desktop-nav {
         display: none;
     } 
     .hamburger-nav {
         display: flex;
     }
+
+    .pricingItem__container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero img {
+        width: 600px;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
+
+    .aboutUs {
+        grid-template-columns: 1fr;
+    }
 }
+

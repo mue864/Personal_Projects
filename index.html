@@ -9,6 +9,7 @@
     <title>Code Share</title>
 </head>
 <body>
+
     <header>
         <nav id="desktop-nav">
             <div class="logo">CodeShare</div>
@@ -47,52 +48,28 @@
             <p class="main-text">AND COLLABORATE TOGETHER.</p>
 
             <div class="btn-container">
-                <button class="btn btn-color-1">
-                    <a href="#pricing">
+                    <a href="#pricing__container">
                         Get Started
                     </a>
-                </button>
             </div>
         </div>
     </section>
 
-    <section class="pricing__container">
+    <section class="pricing__container" id="pricing__container">
         <div class="pricing">
             <div class="pricing__hero">
                 <h1 class="pricing__hero__title">Simple transparent pricing</h1>
                 <p class="pricing__hero__subtitle">No contracts. No suprise fees</p>
             </div>
-            <div class="pricingItem__container">
-                <!--Free pricing starts-->
-                <div class="pricingItem pricingItem__free">
-                    <div class="card">
-                        <div class="card__heading">
-                            <h2>Free</h2>          
-                        </div>
-                        <div class="card__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
+        </div>
 
-                    <div class="price">$0 <span>/ month</span></div>
-
-                    <ul class="pricing__features">
-                        <li>1 User</li>
-                        <li>10 Screenshots</li>
-                        <li>Codescuss</li>
-                        <li>Online IDE</li>
-                        <li><del>AI Integration</del> </li>
-                        <li> <del>Plugin Support</del></li>
-                    </ul>
-                    <button class="button">Get Started</button>
-                </div>
-            </div>
-            <!--Free pricing ends-->
-
-            <div class="pricingItem pricingItem__pro">
+        <div class="pricingItem__container">
+            <!--Free pricing starts-->
+            <div class="pricingItem pricingItem__free">
+                
                 <div class="card">
                     <div class="card__heading">
-                        <h2>Free</h2>          
+                        <h2 class="free">Free</h2>          
                     </div>
                     <div class="card__description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -102,17 +79,71 @@
                 <div class="price">$0 <span>/ month</span></div>
 
                 <ul class="pricing__features">
-                    <li>1 User</li>
+                    <li class="checkmark">1 User</li>
                     <li>10 Screenshots</li>
                     <li>Codescuss</li>
                     <li>Online IDE</li>
                     <li><del>AI Integration</del> </li>
                     <li> <del>Plugin Support</del></li>
+                    <li><del>Figma Files</del></li>
+                    <li><del>Expert help</del></li>
                 </ul>
-                <button class="button">Get Started</button>
+                <button class="button btn-green">Get Started</button>
             </div>
 
+            <div class="pricingItem pricingItem__gold">
+                <div class="card">
+                    <div class="card__heading">
+                        <h2 class="gold">Gold</h2>          
+                    </div>
+                    <div class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+    
+                <div class="price">$17 <span>/ month</span>Yearly</div>
+    
+                <ul class="pricing__features">
+                    <li>5 Users</li>
+                    <li>Unlimited Screenshots</li>
+                    <li>Codescuss</li>
+                    <li>Online IDE</li>
+                    <li>AI Integration </li>
+                    <li>Plugin Support</li>
+                    <li>Figma Files</li>
+                    <li>Expert help</li>
+                </ul>
+                <button class="button btn-gold">Get Started</button>
+            </div>
+
+            <div class="pricingItem pricingItem__pro">
+                <div class="card">
+                    <div class="card__heading">
+                        <h2 class="pro">Pro</h2>          
+                    </div>
+                    <div class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                
+                <div class="price">$25 <span>/ month</span></div>
+    
+                <ul class="pricing__features">
+                    <li>3 Users</li>
+                    <li>100 Screenshots</li>
+                    <li>Codescuss</li>
+                    <li>Online IDE</li>
+                    <li>AI Integration </li>
+                    <li>Plugin Support</li>
+                    <li><del>Figma Files</del></li>
+                    <li>Expert help</li>
+                </ul>
+                <button class="button btn-purple">Get Started</button>
+            </div>
         </div>
+        <!--Pro pricing ends-->
+
+        
     </section>
 
 
