@@ -236,7 +236,7 @@ nav,
 }
 
 .pricingItem {
-    width: 500px;
+    width: 400px;
     background-color: hsl(0,0%,100%);
     border: 1px solid #e6e6e6;
     border-radius: 1rem;
@@ -259,7 +259,7 @@ nav,
 .pricingItem__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .card__description {
