@@ -1,0 +1,184 @@
+/* Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Outfit */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+html {
+  scrollbar-width: none;
+}
+
+/* Positions the name at the center for desktop */
+.nav-icon {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    left: 15rem;
+}
+
+
+
+.lastName {
+    padding-left: 4px;
+    color: #1E90FF;
+}
+
+/* Changes navbar color */
+.navbar_mutsa {
+    background-color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+}
+
+
+/* Pushes the hamburger to the left */
+.custom {
+    margin-left: auto;
+  }
+
+  .nav-item .active {
+    color: #2c2c2c;
+  }
+
+  /* Changing the pill color */
+  .navbar_mutsa .nav-pills .nav-item .active {
+    background-color: transparent;
+    border: #1E90FF 1px solid;
+    border-radius: 8px;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    line-height: normal;  /* Ensure no conflicting line-height */
+  }
+  
+
+  /* Changing link color */
+  .navbar_mutsa .nav-pills > li > a {
+    color: #fff;
+    padding: 8px;
+    
+  }
+
+  .nav-pills > li > a:hover {
+    color: #1E90FF;
+  }
+
+  .navbar-toggler {
+    border: #1E90FF 1px solid !important;
+  }
+
+  .navbar-toggler:focus, .navbar-toggler:active{
+    transition: all 0.4s ease;
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler:active {
+    transition: all 0.3s ease-out;
+    transform: scale(1.1);
+  }
+
+  .navbar-toggler > i:hover {
+    color: #1E90FF;
+  }
+
+  .navbar-toggler:hover {
+    border: #fff 1px solid !important;
+  }
+  /* Resume button */
+  .btn-danger {
+    background-color: #2c2c2c !important;
+    border: #fff 1px solid !important;
+    padding: 8px !important;
+  }
+
+  .btn-danger:hover {
+    transition: all 0.2s ease;
+    border: #1E90FF 1px solid !important;
+  }
+
+ 
+  .resume {
+    z-index: 10; /* Ensure the button is in front */
+    position: relative; /* Needs to be relative for z-index to take effect */
+  }
+
+  /* container */
+  .page {
+    background-color: #2c2c2c;
+    height: 84vh;
+    font-family: "Outfit";
+  }
+
+  .color {
+    color: #fff;
+  }
+
+  /* changes the color of website and mobile text on intro */
+  .website, .mobile {
+    color: #1E90FF;
+  }
+
+  .projectsBtn {
+    width: 150px;
+    background-color: #1E90FF !important;
+    font-weight: 600 !important;
+  }
+
+  .projectsBtn:hover {
+    transition: all 0.2s ease;
+    background-color: #fff !important;
+    color: #2c2c2c !important;
+    border: #1E90FF 1px solid;
+  }
+
+  .projectsBtn:active {
+    transition: all 1s ease-out;
+    transform: scale(1.1);
+  }
+
+
+  .inTouchBtn {
+    width: 150px;
+    background-color: transparent !important;
+    border: #fff 1px solid !important;
+    font-weight: 600;
+  }
+
+  .inTouchBtn:hover {
+    border: #1E90FF 1px solid !important;
+  }
+
+  .inTouchBtn:active {
+    transition: all 1s ease-out;
+    transform: scale(1.1);
+  }
+
+  /* Animation */
+  /* Cursor */
+.cursor{
+  position: relative; 
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;  
+  word-wrap: break-word;
+  display: inline-block;
+
+}
+/* Animation */
+.typewriter-animation {
+animation: 
+  typewriter 5s steps(50) 1s 1 normal both, 
+  blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+from { width: 0; }
+to { width: 100%; }
+}
+@keyframes blinkingCursor{
+from { border-right-color: rgba(255,255,255,.75); }
+to { border-right-color: transparent; }
+}
+
+
